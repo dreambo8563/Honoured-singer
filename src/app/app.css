@@ -1,0 +1,18 @@
+.leftBG {
+    background-color: #4700e5;
+}
+
+.rightBG {
+    background-color: grey;
+}
+
+.height100.container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.animateBlur {
+    -moz-box-shadow: 10px 10px 43px #000000;
+    -webkit-box-shadow: 10px 10px 43px #000000;
+    box-shadow: 10px 10px 43px #000000;
+}

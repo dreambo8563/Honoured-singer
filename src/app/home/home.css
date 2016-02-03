@@ -1,0 +1,24 @@
+
+.homeView{
+   padding-top: 3%;
+}
+
+.heroTitle{
+    font-size: 18px;
+    color: #efe9fa;
+    text-align: right;
+}
+
+.lastName ,.firstName{
+    font-size: 70px;
+    color: #ff4c75;
+    display: inline-block;
+}
+
+.heroTitle a{
+        color: #efe9fa;
+ 
+}
+.heroTitle .row{
+    margin-top: 3%;
+}
