@@ -9,22 +9,23 @@ AfterViewInit,
 EventEmitter
 } from 'angular2/core';
 import {AnimationBuilder} from 'angular2/animate';
+import {HomeImg} from '../homeImg/homeImg';
 
 
 @Component({
     selector: 'backgroundLayer',
     providers: [AnimationBuilder],
+    directives: [HomeImg], 
     styles: [require('./backgroundLayer.css')],
     outputs: ['finished'],
-    host: {
-        'class': 'container-fluid height100'
-    },
-    template: require('./backgroundLayer.html')
+    template: require('./backgroundLayer.html'),
+    inputs: ["showImg"]
 })
 
 export class BackgroundLayer implements OnInit, AfterContentInit, AfterViewInit {
     elBG: QueryList<ElementRef>;
     finished: EventEmitter<boolean>;
+    showImg: boolean;
     constructor( @Query('leftbg', { descendants: false })
     elBG: QueryList<ElementRef>, public _animationBuilder: AnimationBuilder) {
         this.elBG = elBG;

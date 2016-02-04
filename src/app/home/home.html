@@ -4,50 +4,22 @@
             <div class="col-xs-offset-1">
                 <div class="row">
                     <div class="col-xs-offset-2 heroTitle">
-                        <div class="honored" *ngIf="showOthers">
+                        <div class="honored" *ngIf="showOthersConent">
                             Honored Artist
                         </div>
-                        <div #firstName class="firstName col-xs-offset-1">
-                            Dilnaz
-                        </div>
+                        <firstName *ngIf="startFName" (showOthers)="showOthers($event)"></firstName>
                     </div>
-                    <div #lastName class="col-xs-12 lastName col-xs-offset-4">
-                        Akhmadieva
-                    </div>
+                    <lastName *ngIf="showHome" (lastNameFinished)="startFirstName($event)"></lastName>
                 </div>
             </div>
         </div>
     </div>
-    <!--router-->
-    <div class="col-xs-4 col-xs-offset-3 heroTitle" *ngIf="showOthers">
-        <div class="row">
-            <div class="col-xs-2 ">
-                <a href="">Home</a>
-            </div>
-            <div class="col-xs-2">
-                <a href="">Affiche</a>
-            </div>
-            <div class="col-xs-2">
-                <a href="">Media</a>
-            </div>
-            <div class="col-xs-2">
-                <a href="">Gallery</a>
-            </div>
-            <div class="col-xs-2">
-                <a href="">Biography</a>
-            </div>
-            <div class="col-xs-2">
-                <a href="">Contacts</a>
-            </div>
-        </div>
-    </div>
-
 </div>
 
 <div class="space"></div>
 
 <!--play-->
-<div class="row overMargin" *ngIf="showOthers">
+<div class="row overMargin" *ngIf="showOthersConent">
     <div class="col-xs-1  col-xs-offset-2">
         <div class="playIcon">
             <i class="fa fa-play"></i>
@@ -59,7 +31,7 @@
     </div>
 </div>
 <div class="smallSpace"> </div>
-<div class="row overMargin" *ngIf="showOthers">
+<div class="row overMargin" *ngIf="showOthersConent">
     <div class="col-xs-1 heroTitle playText col-xs-offset-2">
         Play music
     </div>
@@ -69,21 +41,7 @@
     </div>
 </div>
 
-<footer>
-    <div class="row overMargin">
-        <div class="socials col-xs-4">
-            <i class="fa fa-twitter"></i>
-            <i class="fa fa-facebook"></i>
-            <i class="fa fa-linkedin"></i>
-        </div>
-        <div class="languages col-xs-2 col-xs-offset-6">
-            <div class="col-xs-2">
-                <a href="">EN</a>
-            </div>
-            <div class="col-xs-2">
-                <a href="">CH</a>
-            </div>
-        </div>
-    </div>
-
-</footer>
+<backgroundLayer (finished)="startHome($event)" [showImg]="showOthersConent">
+    <div #leftbg class="leftBG height100 col-xs-2"></div>
+    <div class="rightBG height100"></div>
+</backgroundLayer>

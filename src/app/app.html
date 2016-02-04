@@ -1,5 +1,42 @@
-<backgroundLayer (finished)="startHome($event)">
-    <div #leftbg class="leftBG height100 col-xs-2"></div>
-    <div class="rightBG height100"></div>
-</backgroundLayer>
-<home *ngIf="showHome"></home>
+<!--router-->
+<div class="routerSection heroTitle">
+    <div class="row" *ngIf="showFooter" >
+        <div class="col-xs-2 ">
+            <a [routerLink]='[Home]'>Home</a>
+        </div>
+        <div class="col-xs-2">
+            <a href="">Affiche</a>
+        </div>
+        <div class="col-xs-2">
+            <a href="">Media</a>
+        </div>
+        <div class="col-xs-2">
+            <a href="">Gallery</a>
+        </div>
+        <div class="col-xs-2">
+            <a href="">Biography</a>
+        </div>
+        <div class="col-xs-2">
+            <a href="">Contacts</a>
+        </div>
+    </div>
+</div>
+<router-outlet></router-outlet>
+<footer *ngIf="showFooter" >
+    <div class="row overMargin">
+        <div class="socials col-xs-4">
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <div class="languages col-xs-2 col-xs-offset-6">
+            <div class="col-xs-2">
+                <a href="">EN</a>
+            </div>
+            <div class="col-xs-2">
+                <a href="">CH</a>
+            </div>
+        </div>
+    </div>
+
+</footer>

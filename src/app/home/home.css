@@ -20,13 +20,6 @@
     display: inline-block;
 }
 
-.heroTitle a {
-    color: #efe9fa;
-}
-
-.heroTitle .row {
-    margin-top: 3%;
-}
 
 .honored {
     display: inline-block;
@@ -57,19 +50,18 @@
     text-align: left;
 }
 
-footer{
-   position: absolute;
-   bottom: 5%;
-   left:10%;
-   width:90%;
+.leftBG {
+    background-color: #4700e5;
 }
 
-footer i{
- color: #efe9fa;
- margin-right: 20px;
+.rightBG {
+    background-color: grey;
 }
 
-.languages a{
-    color: black;
-    font-weight: bold;
+
+.animateBlur {
+    -moz-box-shadow: 10px 10px 43px #000000;
+    -webkit-box-shadow: 10px 10px 43px #000000;
+    box-shadow: 10px 10px 43px #000000;
 }
+
