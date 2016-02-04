@@ -1,22 +1,25 @@
-<div class="row homeView">
+<div class="row homeView overMargin">
     <div class="col-xs-4">
         <div class="row">
             <div class="col-xs-offset-1">
                 <div class="row">
                     <div class="col-xs-offset-2 heroTitle">
-                        Honored Artist
-                        <div class="firstName col-xs-offset-1">
+                        <div class="honored" *ngIf="showOthers">
+                            Honored Artist
+                        </div>
+                        <div #firstName class="firstName col-xs-offset-1">
                             Dilnaz
                         </div>
                     </div>
-                    <div class="col-xs-12 lastName col-xs-offset-4">
+                    <div #lastName class="col-xs-12 lastName col-xs-offset-4">
                         Akhmadieva
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="col-xs-4 col-xs-offset-3 heroTitle">
+    <!--router-->
+    <div class="col-xs-4 col-xs-offset-3 heroTitle" *ngIf="showOthers">
         <div class="row">
             <div class="col-xs-2 ">
                 <a href="">Home</a>
@@ -38,4 +41,49 @@
             </div>
         </div>
     </div>
+
 </div>
+
+<div class="space"></div>
+
+<!--play-->
+<div class="row overMargin" *ngIf="showOthers">
+    <div class="col-xs-1  col-xs-offset-2">
+        <div class="playIcon">
+            <i class="fa fa-play"></i>
+        </div>
+    </div>
+    <div class="col-xs-1 heroTitle">
+        Now Dilnaz
+        <br> Akhmadieva,
+    </div>
+</div>
+<div class="smallSpace"> </div>
+<div class="row overMargin" *ngIf="showOthers">
+    <div class="col-xs-1 heroTitle playText col-xs-offset-2">
+        Play music
+    </div>
+    <div class="col-xs-2 playText heroTitle">
+        we need some description of her here, just for test now. paly the music if you like Akhmadieva. she is very smart and good
+        at singing. we will wait for you.
+    </div>
+</div>
+
+<footer>
+    <div class="row overMargin">
+        <div class="socials col-xs-4">
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <div class="languages col-xs-2 col-xs-offset-6">
+            <div class="col-xs-2">
+                <a href="">EN</a>
+            </div>
+            <div class="col-xs-2">
+                <a href="">CH</a>
+            </div>
+        </div>
+    </div>
+
+</footer>

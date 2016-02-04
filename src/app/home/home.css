@@ -1,24 +1,75 @@
-
-.homeView{
-   padding-top: 3%;
+.homeView {
+    padding-top: 3%;
 }
 
-.heroTitle{
+.overMargin {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.heroTitle {
     font-size: 18px;
     color: #efe9fa;
     text-align: right;
 }
 
-.lastName ,.firstName{
-    font-size: 70px;
+.lastName,
+.firstName {
+    font-size: 0px;
     color: #ff4c75;
     display: inline-block;
 }
 
-.heroTitle a{
-        color: #efe9fa;
- 
+.heroTitle a {
+    color: #efe9fa;
 }
-.heroTitle .row{
+
+.heroTitle .row {
     margin-top: 3%;
+}
+
+.honored {
+    display: inline-block;
+}
+
+.space {
+    height: 100px;
+}
+
+.smallSpace {
+    height: 40px;
+}
+
+.playIcon {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: #efe9fa;
+}
+
+.playIcon i {
+    display: block;
+    text-align: center;
+    line-height: 50px;
+}
+
+.playText {
+    text-align: left;
+}
+
+footer{
+   position: absolute;
+   bottom: 5%;
+   left:10%;
+   width:90%;
+}
+
+footer i{
+ color: #efe9fa;
+ margin-right: 20px;
+}
+
+.languages a{
+    color: black;
+    font-weight: bold;
 }

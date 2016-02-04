@@ -1,12 +1,5 @@
 .height100.row{
-    position: relative;
+    margin-right: 0px;
+    margin-left: 0px;
 }
 
-.homeContent{
-position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
