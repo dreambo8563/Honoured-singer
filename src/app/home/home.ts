@@ -25,6 +25,7 @@ export class Home implements OnInit, AfterViewInit {
     private showHome: boolean = false;
     private startFName: boolean = false;
     private showOthersConent: boolean = false;
+
     constructor(public _animationBuilder: AnimationBuilder, public _showBasic: ShowBasicInfo) {
     }
     ngOnInit() { }
@@ -44,4 +45,6 @@ export class Home implements OnInit, AfterViewInit {
         this.showOthersConent = showOthers;
         this._showBasic.show(true);
     }
+
+
 }

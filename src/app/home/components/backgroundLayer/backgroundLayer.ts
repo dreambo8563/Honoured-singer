@@ -15,7 +15,7 @@ import {HomeImg} from '../homeImg/homeImg';
 @Component({
     selector: 'backgroundLayer',
     providers: [AnimationBuilder],
-    directives: [HomeImg], 
+    directives: [HomeImg],
     styles: [require('./backgroundLayer.css')],
     outputs: ['finished'],
     template: require('./backgroundLayer.html'),
@@ -25,11 +25,13 @@ import {HomeImg} from '../homeImg/homeImg';
 export class BackgroundLayer implements OnInit, AfterContentInit, AfterViewInit {
     elBG: QueryList<ElementRef>;
     finished: EventEmitter<boolean>;
+
     showImg: boolean;
     constructor( @Query('leftbg', { descendants: false })
     elBG: QueryList<ElementRef>, public _animationBuilder: AnimationBuilder) {
         this.elBG = elBG;
         this.finished = new EventEmitter();
+       
     }
 
     ngOnInit() {
@@ -52,4 +54,6 @@ export class BackgroundLayer implements OnInit, AfterContentInit, AfterViewInit 
                 this.finished.emit(true);
             });
     }
+
+ 
 }

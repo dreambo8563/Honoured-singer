@@ -9,25 +9,3 @@
     left: 50%;
 }
 
-.homeBG img {
-    transform: scale(1.5);
-}
-
-.cover1 {
-    position: absolute;
-    top: 5%;
-    width: 100%;
-    background-color: green;
-    height: 20%;
-}
-
-.cover2 {
-    position: absolute;
-    top: 80%;
-    height: 20%;
-    width: 100%;
-    background-color: green;
-}
-.cover1 div,.cover2 div{
-    height: 100%;
-}
