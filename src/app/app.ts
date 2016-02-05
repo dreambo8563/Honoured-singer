@@ -24,7 +24,7 @@ export class App implements OnInit {
             show => {
                 this.showFooter = show;
             }
-        )
+        );
     }
 
     ngOnInit() {

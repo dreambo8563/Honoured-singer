@@ -6,8 +6,8 @@ export class ShowBasicInfo {
     showBasic$: Observable<boolean>;
     private _showBasic: any;
     constructor() {
-        this.showBasic$ = new Observable(observer =>
-            {this._showBasic = observer}).share();
+        this.showBasic$ = new Observable(
+            observer => {return this._showBasic = observer; }).share();
     }
 
     show(show: boolean) {

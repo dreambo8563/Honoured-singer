@@ -19,7 +19,7 @@ import {HomeImg} from '../homeImg/homeImg';
     styles: [require('./backgroundLayer.css')],
     outputs: ['finished'],
     template: require('./backgroundLayer.html'),
-    inputs: ["showImg"]
+    inputs: ['showImg']
 })
 
 export class BackgroundLayer implements OnInit, AfterContentInit, AfterViewInit {
@@ -31,7 +31,6 @@ export class BackgroundLayer implements OnInit, AfterContentInit, AfterViewInit 
     elBG: QueryList<ElementRef>, public _animationBuilder: AnimationBuilder) {
         this.elBG = elBG;
         this.finished = new EventEmitter();
-       
     }
 
     ngOnInit() {
@@ -54,6 +53,5 @@ export class BackgroundLayer implements OnInit, AfterContentInit, AfterViewInit 
                 this.finished.emit(true);
             });
     }
-
- 
 }
+

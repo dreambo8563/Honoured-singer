@@ -27,8 +27,8 @@ export class LastName implements OnInit {
     ngAfterViewInit() {
         this._animationBuilder
             .css()
-            .setFromStyles({ "font-size": "0px" })
-            .setToStyles({ "font-size": "70px" })
+            .setFromStyles({ 'font-size': '0px' })
+            .setToStyles({ 'font-size': '70px' })
             .setDuration(3000)
             .start(this.lastNameEl.nativeElement)
             .onComplete(() => {

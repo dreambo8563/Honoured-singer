@@ -17,7 +17,7 @@ import {ShowBasicInfo} from './services/showBasicInfo';
     directives: [BackgroundLayer, FirstName, LastName],
     styles: [require('./home.css')],
     template: require('./home.html'),
-    host: { class: 'homeContent' }
+    host: { class: 'homeContent container-fluid' }
 
 })
 export class Home implements OnInit, AfterViewInit {

@@ -12,7 +12,7 @@ import {AnimationBuilder} from 'angular2/animate';
     selector: 'homeImg',
     styles: [require('./homeImg.css')],
     template: require('./homeImg.html'),
-    host: { class: "homeBG" }
+    host: { class: 'homeBG' }
 })
 
 export class HomeImg implements OnInit {
@@ -26,8 +26,8 @@ export class HomeImg implements OnInit {
     ngAfterViewInit() {
         this._animationBuilder
             .css()
-            .setFromStyles({ "opacity": "0" })
-            .setToStyles({ "opacity": "1" })
+            .setFromStyles({ 'opacity': '0' })
+            .setToStyles({ 'opacity': '1' })
             .setDuration(3000)
             .start(this.homeImgEl.nativeElement)
             .onComplete(() => {
